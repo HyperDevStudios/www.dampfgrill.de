@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Dampfgrill Outdoor XL Illustration</title>
+  <desc id="desc">Large-scale outdoor steam grill with rugged frame.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#101820" />
+      <stop offset="100%" stop-color="#1f2e38" />
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c6c7a" />
+      <stop offset="100%" stop-color="#3f4d58" />
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d7e2eb" />
+      <stop offset="100%" stop-color="#8a9aaa" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9a3c" />
+      <stop offset="100%" stop-color="#ff6f00" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="28" fill="url(#bg)" />
+  <g transform="translate(60 60)">
+    <rect x="0" y="260" width="480" height="36" rx="14" fill="#26323c" opacity="0.85" />
+    <g transform="translate(20 40)">
+      <rect x="0" y="0" width="440" height="180" rx="24" fill="url(#body)" />
+      <rect x="24" y="42" width="392" height="60" rx="20" fill="#141c24" opacity="0.92" />
+      <rect x="24" y="120" width="392" height="38" rx="14" fill="#243240" opacity="0.85" />
+      <g transform="translate(32 134)" fill="#ffb26b">
+        <rect x="0" y="0" width="84" height="14" rx="7" />
+        <rect x="104" y="0" width="84" height="14" rx="7" />
+        <rect x="208" y="0" width="84" height="14" rx="7" />
+        <rect x="312" y="0" width="84" height="14" rx="7" />
+      </g>
+      <g transform="translate(160 -34)" opacity="0.5">
+        <path d="M0 120c-16-40 18-80 6-120" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
+        <path d="M36 124c-10-42 16-84 4-122" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.6" />
+        <path d="M68 120c-8-40 12-80 2-118" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.45" />
+      </g>
+      <g transform="translate(-20 180)">
+        <rect x="0" y="0" width="40" height="110" rx="14" fill="url(#frame)" />
+        <rect x="420" y="0" width="40" height="110" rx="14" fill="url(#frame)" />
+      </g>
+    </g>
+    <g transform="translate(24 210)">
+      <rect x="0" y="0" width="80" height="24" rx="12" fill="url(#accent)" />
+      <rect x="356" y="0" width="80" height="24" rx="12" fill="url(#accent)" />
+    </g>
+    <rect x="188" y="12" width="164" height="36" rx="18" fill="#ff8f4d" opacity="0.7" />
+    <rect x="52" y="0" width="80" height="20" rx="10" fill="#33424f" opacity="0.7" />
+    <rect x="348" y="0" width="80" height="20" rx="10" fill="#33424f" opacity="0.7" />
+  </g>
+</svg>
