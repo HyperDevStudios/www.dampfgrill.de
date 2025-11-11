@@ -27,4 +27,4 @@ upstream reverse proxy that publishes the site on ports 80 and 443.
 
 - `docker-compose.yml` defines the Nginx container and mounts the `web/` directory.
 - `docker/nginx/default.conf` listens on port 85 inside the container to match the expected reverse proxy port mapping.
-- Product artwork is stored in `web/assets/images/` as custom SVG illustrations that can be updated or extended as new grill model descriptions are added.
+- Product artwork is stored in `web/assets/images/` as custom SVG illustrations. The current set portrays each grill in a stylised steam-powered scene so the thumbnails stay on-brand while remaining easy to adjust in a vector editor.

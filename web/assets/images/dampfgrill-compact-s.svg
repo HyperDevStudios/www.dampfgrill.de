@@ -1,46 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
   <title id="title">Dampfgrill Compact S Illustration</title>
-  <desc id="desc">Compact steam grill on a balcony-inspired backdrop.</desc>
+  <desc id="desc">Compact spherical steam grill with foldable legs and vibrant accent ring.</desc>
+  <!-- Compact grill illustration uses warm gradients to underline portability and friendliness -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0%" stop-color="#15212a" />
-      <stop offset="100%" stop-color="#1f2f3c" />
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#251a2d" />
+      <stop offset="70%" stop-color="#140f1a" />
+      <stop offset="100%" stop-color="#0a0710" />
+    </radialGradient>
+    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8f5c" />
+      <stop offset="55%" stop-color="#ff7043" />
+      <stop offset="100%" stop-color="#c63f1a" />
     </linearGradient>
-    <linearGradient id="balcony" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#374b5a" />
-      <stop offset="100%" stop-color="#4e6575" />
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d232f" />
+      <stop offset="100%" stop-color="#131019" />
     </linearGradient>
-    <linearGradient id="compact-body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d4e0ea" />
-      <stop offset="100%" stop-color="#8f9cab" />
+    <linearGradient id="leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8f97a2" />
+      <stop offset="100%" stop-color="#4f5762" />
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f4c77d" />
+      <stop offset="100%" stop-color="#f7e2b4" />
+    </linearGradient>
+    <linearGradient id="steam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#f5f9ff" stop-opacity="0.5" />
     </linearGradient>
   </defs>
-  <rect width="600" height="400" rx="28" fill="url(#bg)" />
-  <g transform="translate(60 60)">
-    <rect x="0" y="220" width="480" height="32" rx="16" fill="url(#balcony)" />
-    <rect x="16" y="236" width="448" height="18" rx="9" fill="#121c25" opacity="0.8" />
-    <g transform="translate(120 60)">
-      <rect x="0" y="40" width="240" height="120" rx="26" fill="url(#compact-body)" />
-      <rect x="20" y="74" width="200" height="48" rx="16" fill="#1d2a34" opacity="0.9" />
-      <rect x="20" y="132" width="200" height="18" rx="9" fill="#415163" opacity="0.8" />
-      <g fill="#ff8a65">
-        <circle cx="48" cy="92" r="6" />
-        <circle cx="92" cy="92" r="6" />
-        <circle cx="136" cy="92" r="6" />
-        <circle cx="180" cy="92" r="6" />
-      </g>
-      <g transform="translate(90 -36)" opacity="0.55">
-        <path d="M10 90c-8-24 12-44 4-70" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
-        <path d="M34 94c-10-30 10-54 2-80" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.6" />
-      </g>
-      <g transform="translate(-28 154)">
-        <rect x="0" y="0" width="30" height="76" rx="12" fill="#637383" />
-        <rect x="30" y="0" width="188" height="12" rx="6" fill="#2c3945" />
-        <rect x="218" y="0" width="30" height="76" rx="12" fill="#637383" />
+  <rect width="640" height="400" fill="url(#bg)" rx="32" />
+  <g transform="translate(60 40)">
+    <ellipse cx="260" cy="288" rx="190" ry="26" fill="#040306" opacity="0.4" />
+    <!-- Steam swirl -->
+    <g transform="translate(330 -6)">
+      <path d="M108 92c12-22 0-42 14-68" fill="none" stroke="url(#steam)" stroke-width="8" stroke-linecap="round" />
+      <path d="M132 98c10-24-6-44 8-70" fill="none" stroke="url(#steam)" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+    </g>
+    <!-- Main kettle body -->
+    <g transform="translate(80 36)">
+      <ellipse cx="180" cy="118" rx="168" ry="92" fill="#1a141f" />
+      <path d="M36 100c18-72 112-104 180-104s162 32 180 104c-68 16-292 16-360 0z" fill="url(#dome)" />
+      <ellipse cx="180" cy="112" rx="146" ry="62" fill="#441f29" opacity="0.3" />
+      <ellipse cx="180" cy="118" rx="132" ry="44" fill="#07050b" opacity="0.5" />
+      <path d="M74 104c28-44 102-66 206-50" stroke="#ffd7c2" stroke-width="6" stroke-linecap="round" opacity="0.25" fill="none" />
+      <!-- Handle and vent ring -->
+      <rect x="132" y="-12" width="96" height="22" rx="11" fill="url(#handle)" />
+      <rect x="114" y="-2" width="132" height="12" rx="6" fill="#1b1018" opacity="0.55" />
+      <g fill="#ffc49c" opacity="0.45">
+        <circle cx="96" cy="62" r="6" />
+        <circle cx="180" cy="44" r="6" />
+        <circle cx="264" cy="62" r="6" />
       </g>
     </g>
-    <rect x="360" y="24" width="48" height="48" rx="12" fill="#ffb347" opacity="0.75" />
-    <rect x="80" y="0" width="120" height="32" rx="16" fill="#2f3f4d" opacity="0.8" />
-    <rect x="228" y="12" width="68" height="20" rx="10" fill="#2f3f4d" opacity="0.6" />
+    <!-- Locking ring and thermometer strip -->
+    <g transform="translate(104 176)">
+      <rect x="36" y="0" width="280" height="28" rx="12" fill="#2b232d" />
+      <rect x="52" y="6" width="248" height="16" rx="8" fill="#120d16" />
+      <g transform="translate(64 6)">
+        <rect x="0" y="0" width="56" height="16" rx="8" fill="#ffb74d" opacity="0.8" />
+        <rect x="76" y="0" width="56" height="16" rx="8" fill="#ff8f5c" opacity="0.8" />
+        <rect x="152" y="0" width="56" height="16" rx="8" fill="#f4511e" opacity="0.8" />
+      </g>
+    </g>
+    <!-- Foldable legs with wheels -->
+    <g transform="translate(124 204)">
+      <rect x="0" y="0" width="26" height="108" rx="12" fill="url(#leg)" />
+      <rect x="240" y="0" width="26" height="108" rx="12" fill="url(#leg)" />
+      <rect x="96" y="8" width="26" height="126" rx="12" fill="url(#leg)" />
+      <rect x="168" y="8" width="26" height="126" rx="12" fill="url(#leg)" />
+      <circle cx="12" cy="120" r="20" fill="#0d1116" stroke="#414b58" stroke-width="6" />
+      <circle cx="252" cy="120" r="20" fill="#0d1116" stroke="#414b58" stroke-width="6" />
+      <circle cx="108" cy="138" r="16" fill="#0d1116" stroke="#414b58" stroke-width="5" />
+      <circle cx="180" cy="138" r="16" fill="#0d1116" stroke="#414b58" stroke-width="5" />
+      <circle cx="12" cy="120" r="6" fill="#838c9a" />
+      <circle cx="252" cy="120" r="6" fill="#838c9a" />
+      <circle cx="108" cy="138" r="5" fill="#838c9a" />
+      <circle cx="180" cy="138" r="5" fill="#838c9a" />
+    </g>
   </g>
 </svg>

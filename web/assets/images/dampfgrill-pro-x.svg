@@ -1,45 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
   <title id="title">Dampfgrill Pro X Illustration</title>
-  <desc id="desc">Stylised stainless steel steam grill with illuminated details.</desc>
+  <desc id="desc">Stylised flagship steam grill with panoramic hood, illuminated knobs and side shelf.</desc>
+  <!-- Hero background with subtle vignette to keep the focus on the grill silhouette -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#101924" />
-      <stop offset="100%" stop-color="#223548" />
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1a2230" />
+      <stop offset="70%" stop-color="#10151f" />
+      <stop offset="100%" stop-color="#0b0f17" />
+    </radialGradient>
+    <linearGradient id="hood" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9aa7b5" />
+      <stop offset="40%" stop-color="#cfd8e1" />
+      <stop offset="100%" stop-color="#7f8a96" />
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d3744" />
+      <stop offset="100%" stop-color="#161b24" />
+    </linearGradient>
+    <linearGradient id="leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#808a96" />
+      <stop offset="100%" stop-color="#4a5462" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7b3d" />
+      <stop offset="100%" stop-color="#ffd061" />
     </linearGradient>
     <linearGradient id="steam" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#dfe9f3" stop-opacity="0.05" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.45" />
-    </linearGradient>
-    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#a7b2bd" />
-      <stop offset="50%" stop-color="#d9e2ec" />
-      <stop offset="100%" stop-color="#909aa5" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#e7f3ff" stop-opacity="0.4" />
     </linearGradient>
   </defs>
-  <rect fill="url(#bg)" width="600" height="400" rx="28" />
-  <g transform="translate(90 70)">
-    <rect x="20" y="60" width="380" height="140" rx="18" fill="url(#metal)" />
-    <rect x="44" y="88" width="332" height="28" rx="8" fill="#0d1117" opacity="0.9" />
-    <rect x="44" y="130" width="332" height="46" rx="10" fill="#18232f" />
-    <rect x="64" y="138" width="80" height="12" rx="6" fill="#3dd6ff" opacity="0.6" />
-    <rect x="160" y="138" width="80" height="12" rx="6" fill="#ff9557" opacity="0.7" />
-    <rect x="256" y="138" width="80" height="12" rx="6" fill="#7fffd4" opacity="0.55" />
-    <g transform="translate(190 10)">
-      <ellipse cx="50" cy="20" rx="70" ry="20" fill="#141b24" opacity="0.8" />
-      <ellipse cx="50" cy="16" rx="56" ry="16" fill="#d0dae4" />
-      <path d="M0 16h100v30c0 18-22 32-50 32s-50-14-50-32z" fill="#edf3fa" opacity="0.85" />
-      <path d="M26 6c10 8 0 18 8 28 7 9 21 7 27 0" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.45" />
-      <path d="M52 0c10 9 0 20 7 30 6 9 18 9 26 2" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.35" />
+  <rect width="640" height="400" fill="url(#bg)" rx="32" />
+  <g transform="translate(60 46)">
+    <ellipse cx="280" cy="284" rx="220" ry="28" fill="#05070b" opacity="0.45" />
+    <!-- Side shelf -->
+    <g transform="translate(440 126)">
+      <rect x="-20" y="-16" width="96" height="18" rx="8" fill="#242b36" />
+      <rect x="-20" y="-6" width="96" height="12" rx="6" fill="#141922" />
+      <rect x="-6" y="6" width="12" height="84" rx="6" fill="url(#leg)" />
+      <rect x="52" y="6" width="12" height="84" rx="6" fill="url(#leg)" />
     </g>
-    <g transform="translate(28 192)">
-      <rect x="0" y="0" width="40" height="80" rx="10" fill="#5f6b78" />
-      <rect x="344" y="0" width="40" height="80" rx="10" fill="#5f6b78" />
-      <rect x="0" y="62" width="40" height="12" rx="6" fill="#2f3742" />
-      <rect x="344" y="62" width="40" height="12" rx="6" fill="#2f3742" />
+    <!-- Hood with glass panel -->
+    <g transform="translate(70 10)">
+      <path d="M32 88c10-44 56-70 178-70s168 26 178 70v60H32z" fill="url(#hood)" />
+      <rect x="74" y="48" width="240" height="46" rx="20" fill="#0f141c" opacity="0.75" />
+      <rect x="82" y="56" width="224" height="30" rx="16" fill="#5fc7ff" opacity="0.24" />
+      <path d="M48 90h324" stroke="#ffffff" stroke-opacity="0.18" stroke-width="6" stroke-linecap="round" />
+      <path d="M40 70c16-36 64-60 180-60s164 24 180 60" stroke="#ffffff" stroke-opacity="0.12" stroke-width="4" fill="none" />
     </g>
-  </g>
-  <g transform="translate(445 60)">
-    <path d="M12 120c18-60 6-96 24-132" fill="none" stroke="url(#steam)" stroke-width="10" stroke-linecap="round" />
-    <path d="M52 120c16-52 0-92 16-132" fill="none" stroke="url(#steam)" stroke-width="8" stroke-linecap="round" opacity="0.65" />
+    <!-- Steam plume to underline steam cooking focus -->
+    <g transform="translate(110 -10)">
+      <path d="M310 68c16-26 8-54 24-80" fill="none" stroke="url(#steam)" stroke-width="10" stroke-linecap="round" />
+      <path d="M338 72c12-28-4-54 14-86" fill="none" stroke="url(#steam)" stroke-width="8" stroke-linecap="round" opacity="0.65" />
+      <path d="M364 74c10-24-6-46 10-74" fill="none" stroke="url(#steam)" stroke-width="6" stroke-linecap="round" opacity="0.5" />
+    </g>
+    <!-- Main body with control panel -->
+    <g transform="translate(60 104)">
+      <rect x="12" y="0" width="416" height="120" rx="22" fill="url(#body)" />
+      <rect x="40" y="22" width="360" height="38" rx="14" fill="#0c1119" opacity="0.85" />
+      <rect x="48" y="28" width="344" height="26" rx="12" fill="#19202b" />
+      <g transform="translate(70 34)">
+        <rect x="0" y="0" width="92" height="16" rx="8" fill="#384352" />
+        <rect x="104" y="0" width="92" height="16" rx="8" fill="#384352" />
+        <rect x="208" y="0" width="92" height="16" rx="8" fill="#384352" />
+      </g>
+      <g transform="translate(86 70)">
+        <circle cx="0" cy="0" r="16" fill="#111823" stroke="#2e3746" stroke-width="4" />
+        <circle cx="0" cy="0" r="6" fill="url(#glow)" />
+        <circle cx="120" cy="0" r="16" fill="#111823" stroke="#2e3746" stroke-width="4" />
+        <circle cx="120" cy="0" r="6" fill="url(#glow)" />
+        <circle cx="240" cy="0" r="16" fill="#111823" stroke="#2e3746" stroke-width="4" />
+        <circle cx="240" cy="0" r="6" fill="url(#glow)" />
+        <circle cx="360" cy="0" r="16" fill="#111823" stroke="#2e3746" stroke-width="4" />
+        <circle cx="360" cy="0" r="6" fill="url(#glow)" />
+      </g>
+    </g>
+    <!-- Storage doors -->
+    <g transform="translate(120 232)">
+      <rect x="0" y="0" width="124" height="70" rx="12" fill="#202834" />
+      <rect x="152" y="0" width="124" height="70" rx="12" fill="#202834" />
+      <rect x="304" y="0" width="124" height="70" rx="12" fill="#202834" />
+      <g transform="translate(0 0)" fill="#3a4656">
+        <rect x="58" y="28" width="8" height="16" rx="4" />
+        <rect x="210" y="28" width="8" height="16" rx="4" />
+        <rect x="362" y="28" width="8" height="16" rx="4" />
+      </g>
+    </g>
+    <!-- Legs and wheels for stability cue -->
+    <g transform="translate(104 220)">
+      <rect x="0" y="0" width="24" height="98" rx="10" fill="url(#leg)" />
+      <rect x="360" y="0" width="24" height="98" rx="10" fill="url(#leg)" />
+      <circle cx="12" cy="108" r="22" fill="#0d1117" stroke="#3b4656" stroke-width="6" />
+      <circle cx="372" cy="108" r="22" fill="#0d1117" stroke="#3b4656" stroke-width="6" />
+      <circle cx="12" cy="108" r="8" fill="#7f8a96" />
+      <circle cx="372" cy="108" r="8" fill="#7f8a96" />
+    </g>
   </g>
 </svg>

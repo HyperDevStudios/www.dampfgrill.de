@@ -1,53 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
   <title id="title">Dampfgrill Outdoor XL Illustration</title>
-  <desc id="desc">Large-scale outdoor steam grill with rugged frame.</desc>
+  <desc id="desc">Large outdoor steam grill with dual chimneys, generous storage and rugged wheels.</desc>
+  <!-- Outdoor flagship uses deep greens and cool metals for a premium backyard feel -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0%" stop-color="#101820" />
-      <stop offset="100%" stop-color="#1f2e38" />
-    </linearGradient>
-    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5c6c7a" />
-      <stop offset="100%" stop-color="#3f4d58" />
-    </linearGradient>
+    <radialGradient id="bg" cx="52%" cy="42%" r="78%">
+      <stop offset="0%" stop-color="#17281e" />
+      <stop offset="70%" stop-color="#0f1b14" />
+      <stop offset="100%" stop-color="#08100c" />
+    </radialGradient>
     <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d7e2eb" />
-      <stop offset="100%" stop-color="#8a9aaa" />
+      <stop offset="0%" stop-color="#1e2f24" />
+      <stop offset="100%" stop-color="#0f1712" />
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#aebcc7" />
+      <stop offset="100%" stop-color="#7b8895" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22302a" />
+      <stop offset="100%" stop-color="#0f1b14" />
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff9a3c" />
-      <stop offset="100%" stop-color="#ff6f00" />
+      <stop offset="0%" stop-color="#6be7a1" />
+      <stop offset="100%" stop-color="#44bfb0" />
+    </linearGradient>
+    <linearGradient id="steam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#e0fff9" stop-opacity="0.5" />
     </linearGradient>
   </defs>
-  <rect width="600" height="400" rx="28" fill="url(#bg)" />
-  <g transform="translate(60 60)">
-    <rect x="0" y="260" width="480" height="36" rx="14" fill="#26323c" opacity="0.85" />
-    <g transform="translate(20 40)">
-      <rect x="0" y="0" width="440" height="180" rx="24" fill="url(#body)" />
-      <rect x="24" y="42" width="392" height="60" rx="20" fill="#141c24" opacity="0.92" />
-      <rect x="24" y="120" width="392" height="38" rx="14" fill="#243240" opacity="0.85" />
-      <g transform="translate(32 134)" fill="#ffb26b">
-        <rect x="0" y="0" width="84" height="14" rx="7" />
-        <rect x="104" y="0" width="84" height="14" rx="7" />
-        <rect x="208" y="0" width="84" height="14" rx="7" />
-        <rect x="312" y="0" width="84" height="14" rx="7" />
+  <rect width="640" height="400" rx="32" fill="url(#bg)" />
+  <g transform="translate(48 46)">
+    <ellipse cx="280" cy="290" rx="228" ry="28" fill="#040807" opacity="0.42" />
+    <!-- Twin steam plumes rising from chimneys -->
+    <g transform="translate(160 -8)">
+      <path d="M68 110c18-36-6-64 16-98" fill="none" stroke="url(#steam)" stroke-width="10" stroke-linecap="round" />
+      <path d="M288 108c16-38-4-68 20-100" fill="none" stroke="url(#steam)" stroke-width="9" stroke-linecap="round" opacity="0.7" />
+      <path d="M96 114c16-36-2-64 18-96" fill="none" stroke="url(#steam)" stroke-width="8" stroke-linecap="round" opacity="0.55" />
+      <path d="M260 112c14-34-4-62 18-94" fill="none" stroke="url(#steam)" stroke-width="7" stroke-linecap="round" opacity="0.5" />
+    </g>
+    <!-- Upper hood and chimneys -->
+    <g transform="translate(64 24)">
+      <rect x="32" y="40" width="368" height="164" rx="28" fill="url(#body)" />
+      <path d="M40 116c10-86 104-134 216-134s206 48 216 134" fill="#25372c" />
+      <path d="M40 116c12-70 110-108 216-108s204 38 216 108" stroke="#73f2b3" stroke-width="6" stroke-linecap="round" opacity="0.25" fill="none" />
+      <rect x="92" y="88" width="288" height="78" rx="24" fill="#101812" opacity="0.85" />
+      <rect x="112" y="104" width="248" height="46" rx="18" fill="#18241c" />
+      <g transform="translate(140 116)">
+        <rect x="0" y="0" width="72" height="22" rx="10" fill="#1f2d24" />
+        <rect x="94" y="0" width="72" height="22" rx="10" fill="#1f2d24" />
+        <rect x="188" y="0" width="72" height="22" rx="10" fill="#1f2d24" />
       </g>
-      <g transform="translate(160 -34)" opacity="0.5">
-        <path d="M0 120c-16-40 18-80 6-120" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
-        <path d="M36 124c-10-42 16-84 4-122" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.6" />
-        <path d="M68 120c-8-40 12-80 2-118" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.45" />
+      <!-- Chimneys -->
+      <g transform="translate(78 -20)">
+        <rect x="0" y="0" width="44" height="76" rx="16" fill="url(#steel)" />
+        <rect x="0" y="60" width="44" height="24" rx="12" fill="#101812" />
       </g>
-      <g transform="translate(-20 180)">
-        <rect x="0" y="0" width="40" height="110" rx="14" fill="url(#frame)" />
-        <rect x="420" y="0" width="40" height="110" rx="14" fill="url(#frame)" />
+      <g transform="translate(312 -20)">
+        <rect x="0" y="0" width="44" height="76" rx="16" fill="url(#steel)" />
+        <rect x="0" y="60" width="44" height="24" rx="12" fill="#101812" />
       </g>
     </g>
-    <g transform="translate(24 210)">
-      <rect x="0" y="0" width="80" height="24" rx="12" fill="url(#accent)" />
-      <rect x="356" y="0" width="80" height="24" rx="12" fill="url(#accent)" />
+    <!-- Control panel and storage -->
+    <g transform="translate(96 182)">
+      <rect x="0" y="0" width="408" height="118" rx="22" fill="url(#panel)" />
+      <rect x="18" y="16" width="372" height="46" rx="18" fill="#0c130f" opacity="0.85" />
+      <g transform="translate(48 28)">
+        <circle cx="0" cy="0" r="18" fill="#06100b" stroke="#395443" stroke-width="5" />
+        <circle cx="0" cy="0" r="8" fill="url(#accent)" />
+        <circle cx="120" cy="0" r="18" fill="#06100b" stroke="#395443" stroke-width="5" />
+        <circle cx="120" cy="0" r="8" fill="url(#accent)" />
+        <circle cx="240" cy="0" r="18" fill="#06100b" stroke="#395443" stroke-width="5" />
+        <circle cx="240" cy="0" r="8" fill="url(#accent)" />
+        <circle cx="360" cy="0" r="18" fill="#06100b" stroke="#395443" stroke-width="5" />
+        <circle cx="360" cy="0" r="8" fill="url(#accent)" />
+      </g>
+      <g transform="translate(32 74)">
+        <rect x="0" y="0" width="112" height="58" rx="14" fill="#16221a" />
+        <rect x="128" y="0" width="112" height="58" rx="14" fill="#16221a" />
+        <rect x="256" y="0" width="112" height="58" rx="14" fill="#16221a" />
+        <g fill="#25342a">
+          <rect x="46" y="22" width="20" height="12" rx="6" />
+          <rect x="174" y="22" width="20" height="12" rx="6" />
+          <rect x="302" y="22" width="20" height="12" rx="6" />
+        </g>
+      </g>
     </g>
-    <rect x="188" y="12" width="164" height="36" rx="18" fill="#ff8f4d" opacity="0.7" />
-    <rect x="52" y="0" width="80" height="20" rx="10" fill="#33424f" opacity="0.7" />
-    <rect x="348" y="0" width="80" height="20" rx="10" fill="#33424f" opacity="0.7" />
+    <!-- Legs, frame and wheels -->
+    <g transform="translate(112 248)">
+      <rect x="0" y="0" width="40" height="104" rx="14" fill="url(#steel)" />
+      <rect x="304" y="0" width="40" height="104" rx="14" fill="url(#steel)" />
+      <rect x="120" y="10" width="40" height="126" rx="14" fill="url(#steel)" />
+      <rect x="184" y="10" width="40" height="126" rx="14" fill="url(#steel)" />
+      <rect x="-10" y="42" width="374" height="18" rx="9" fill="#111b14" />
+      <circle cx="20" cy="116" r="30" fill="#050a07" stroke="#2e4336" stroke-width="8" />
+      <circle cx="324" cy="116" r="30" fill="#050a07" stroke="#2e4336" stroke-width="8" />
+      <circle cx="20" cy="116" r="10" fill="#7d8c85" />
+      <circle cx="324" cy="116" r="10" fill="#7d8c85" />
+    </g>
   </g>
 </svg>
