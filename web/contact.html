@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt &amp; Impressum – Dampfgrill.de</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --accent: #e5731a;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #11161d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: minmax(160px, 1fr) 2fr;
+      gap: 0.5rem 1rem;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    dt {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .placeholder {
+      font-style: italic;
+      color: #ffb470;
+    }
+
+    .note {
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #11161d;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(230, 237, 243, 0.1);
+      background: rgba(13, 17, 23, 0.9);
+      color: var(--text);
+    }
+
+    button {
+      justify-self: start;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #0d1117;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover,
+    button:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(229, 115, 26, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <!-- Shared header maintains consistent navigation between static pages -->
+  <header>
+    <div class="left">
+      <h1>Dampfgrill.de</h1>
+    </div>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="about.html">Über uns</a>
+      <a href="contact.html" aria-current="page">Kontakt &amp; Impressum</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <!-- Contact section offers a simple, privacy-friendly form -->
+      <h2>Kontakt</h2>
+      <p>
+        Du hast Fragen zu unseren dampfgetriebenen Grillvisionen oder möchtest mit CrashNet.eu kooperieren?
+        Nutze das Formular oder die Kontaktdaten, um uns zu erreichen.
+      </p>
+      <form action="mailto:info@example.com" method="post" enctype="text/plain">
+        <label>
+          Deine E-Mail-Adresse
+          <input type="email" name="email" required aria-required="true" />
+        </label>
+        <label>
+          Deine Nachricht
+          <textarea name="message" rows="5" required aria-required="true"></textarea>
+        </label>
+        <button type="submit">Nachricht senden</button>
+      </form>
+      <p class="note">
+        Dieses Formular nutzt dein lokales E-Mail-Programm (mailto). Für eine vollständig datenschutzkonforme Lösung
+        kannst du den Empfänger später auf einen DSGVO-konformen Service anpassen.
+      </p>
+    </section>
+
+    <section>
+      <!-- Impressum section contains placeholders that must be filled with real data -->
+      <h2>Impressum</h2>
+      <p>Bitte ersetze die Platzhalter vor der Veröffentlichung mit deinen echten Unternehmensdaten.</p>
+      <dl>
+        <dt>Verantwortlich für den Inhalt</dt>
+        <dd><span class="placeholder">[Name / Unternehmen]</span></dd>
+
+        <dt>Adresse</dt>
+        <dd><span class="placeholder">[Straße, Hausnummer]</span><br /><span class="placeholder">[PLZ, Ort]</span></dd>
+
+        <dt>Kontakt</dt>
+        <dd>Telefon: <span class="placeholder">[Telefonnummer]</span><br />E-Mail: <span class="placeholder">[E-Mail-Adresse]</span></dd>
+
+        <dt>Vertretungsberechtigte Personen</dt>
+        <dd><span class="placeholder">[Geschäftsführung / Vertretung]</span></dd>
+
+        <dt>Registereintrag</dt>
+        <dd><span class="placeholder">[Registergericht, Registernummer]</span></dd>
+
+        <dt>Umsatzsteuer-ID</dt>
+        <dd><span class="placeholder">[USt-IdNr.]</span></dd>
+
+        <dt>Aufsichtsbehörde</dt>
+        <dd><span class="placeholder">[Zuständige Aufsichtsbehörde]</span></dd>
+      </dl>
+      <p class="note">
+        Ergänze zusätzlich Hinweise zu Streitbeilegung, Berufshaftpflicht, Berufsrecht oder weiteren gesetzlichen
+        Anforderungen, falls sie auf dein Unternehmen zutreffen.
+      </p>
+    </section>
+
+    <section>
+      <!-- Privacy hint reminds users of data handling responsibilities -->
+      <h2>Hinweis zum Datenschutz</h2>
+      <p>
+        CrashNet.eu behandelt deine Daten mit Vorsicht: Wir speichern nur, was nötig ist, und löschen alles,
+        was nicht nach frischem Nebel riecht. Passe diesen Text unbedingt an deine tatsächlichen
+        Datenschutzprozesse an und verlinke auf deine vollständige Datenschutzerklärung.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer mirrors other pages for consistent user experience -->
+    <p>&copy; <span id="year"></span> Dampfgrill.de – Ein Projekt von CrashNet.eu</p>
+  </footer>
+
+  <script>
+    // Keep the footer year up-to-date to reduce manual edits
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -6,6 +6,12 @@ The project now includes a Docker Compose configuration that exposes the Nginx
 static web server on port **85**. This port is designed to sit behind the
 upstream reverse proxy that publishes the site on ports 80 and 443.
 
+### Neue Seiten
+
+- `web/about.html` stellt die fiktive CrashNet.eu-Crew mit einer spielerischen Über-uns-Story vor.
+- `web/contact.html` bietet ein Kontaktformular und ein Impressum mit Platzhaltern, die vor dem Livegang auszufüllen sind.
+- Die Navigation der Startseite verlinkt nun auf beide neuen statischen Seiten.
+
 ### Prerequisites
 
 - Docker

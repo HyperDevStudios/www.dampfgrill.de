@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns – Dampfgrill.de</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --accent: #e5731a;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #11161d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .intro,
+    .team,
+    .values {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .team ul,
+    .values ul {
+      list-style: disc;
+      padding-left: 1.2rem;
+      color: var(--muted);
+    }
+
+    footer {
+      background: #11161d;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #0d1117;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a.button:hover,
+    a.button:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(229, 115, 26, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <!-- Shared site header highlighting the CrashNet.eu team story -->
+  <header>
+    <div class="left">
+      <h1>Dampfgrill.de</h1>
+    </div>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="about.html" aria-current="page">Über uns</a>
+      <a href="contact.html">Kontakt &amp; Impressum</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <!-- Introductory section clarifies the fictional CrashNet.eu backstory -->
+      <h2>Wer steckt hinter Dampfgrill.de?</h2>
+      <p>
+        Hinter diesem dampfgetriebenen Grill-Manifest steht das legendäre Team von
+        <strong>CrashNet.eu</strong> – eine verschworene Gemeinschaft aus
+        Grillromantikern, Tech-Nerds und Menschen, die glauben, dass Dampf nicht nur
+        Lokomotiven antreibt, sondern auch Geschmacksexplosionen. In nächtelangen
+        Videokonferenzen wurde der Plan geboren, die Welt mit perfekt angeheizten
+        Aromawolken zu versorgen.
+      </p>
+    </section>
+
+    <section class="team">
+      <!-- Team section introduces playful personas for visitors -->
+      <h2>Unser Team</h2>
+      <ul>
+        <li><strong>Chief Steam Officer:</strong> Jana "Pressure Queen" Novak – sorgt für konstante 9 Bar Begeisterung.</li>
+        <li><strong>Flavor Architect:</strong> Ben "Smokelord" Kramer – mixt Marinaden aus urbaner Mythenkunde.</li>
+        <li><strong>Heat Whisperer:</strong> Mei "Sizzle Sensei" Liang – hört die Temperatur, bevor das Thermometer reagiert.</li>
+        <li><strong>Logistics Wizard:</strong> Leo "Railroad" Schuster – verschickt Dampfkapseln schneller als du "Zisch" sagen kannst.</li>
+      </ul>
+    </section>
+
+    <section class="values">
+      <!-- Value section highlights mission with tongue-in-cheek tone -->
+      <h2>Unsere Mission</h2>
+      <ul>
+        <li>Wir hacken Dampf, bis er schmeckt – und dokumentieren jeden Zisch in Tabellen.</li>
+        <li>Wir liefern Sets mit mehr Buttons als eine Raumstation, damit niemand aus Versehen grillt wie früher.</li>
+        <li>Wir veranstalten SteamUps, bei denen Nebelmaschinen Pflicht und Kohle verboten ist.</li>
+      </ul>
+      <p>
+        Du willst dabei sein? Dann melde dich für unseren Newsletter oder komm beim nächsten
+        Community-Stammtisch vorbei. Wir bringen die Dampfraketen, du die Snacks.
+      </p>
+      <a class="button" href="contact.html">Kontakt aufnehmen</a>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer keeps navigation minimal and consistent across pages -->
+    <p>&copy; <span id="year"></span> Dampfgrill.de – Ein Projekt von CrashNet.eu</p>
+  </footer>
+
+  <script>
+    // Update the footer year dynamically for minimal maintenance
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
