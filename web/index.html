@@ -266,9 +266,10 @@
       <span class="cart" title="Warenkorb">🛒</span>
       <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
       <nav>
-        <a href="#">Produkte</a>
-        <a href="#">Über uns</a>
-        <a href="#">Kontakt</a>
+        <!-- Navigation mixes internal anchors with new static pages -->
+        <a href="#produkte">Produkte</a>
+        <a href="about.html">Über uns</a>
+        <a href="contact.html">Kontakt &amp; Impressum</a>
       </nav>
     </div>
   </header>
@@ -280,7 +281,7 @@
     </div>
   </section>
 
-  <main>
+  <main id="produkte">
     <div class="card">
       <img src="https://via.placeholder.com/300x160?text=Dampfgrill+Pro+X" alt="Dampfgrill Pro X" />
       <h3>Dampfgrill Pro X</h3>
